@@ -1,4 +1,8 @@
 import { useState } from "react";
+import image1Image from "../assets/image1_main.png";
+import image2Image from "../assets/image2_blog.png";
+import admin1Image from "../assets/admin_1.png";
+import admin2Image from "../assets/admin_2.png";
 
 const Projects = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -22,7 +26,7 @@ const Projects = () => {
           <div className="space-y-4 flex justify-center">
             <div className="max-w-[400px] overflow-hidden">
               <img
-                src="/src/assets/image1_main.png"
+                src={image1Image}
                 alt="Image of main page of blog"
                 className="w-full h-auto rounded-lg border-gray-300 border"
               />
@@ -77,7 +81,7 @@ const Projects = () => {
               src="src/assets/image2_blog.png"
               alt="Blog content view"
               className="w-24 h-24 object-contain cursor-pointer"
-              onClick={() => handleImageClick("/src/assets/image2_blog.png")}
+              onClick={() => handleImageClick(`${image2Image}`)}
             />
           </div>
           <div className="rounded-lg overflow-hidden border-gray-300 border shadow-md transition-all duration-200 ease-in-out transform hover:scale-105">
@@ -85,7 +89,7 @@ const Projects = () => {
               src="src/assets/admin_1.png"
               alt="Admin dashboard view 1"
               className="w-24 h-24 object-contain cursor-pointer"
-              onClick={() => handleImageClick("/src/assets/admin_1.png")}
+              onClick={() => handleImageClick(`${admin1Image}`)}
             />
           </div>
           <div className="rounded-lg overflow-hidden border-gray-300 border shadow-md transition-all duration-200 ease-in-out transform hover:scale-105">
@@ -93,7 +97,7 @@ const Projects = () => {
               src="src/assets/admin_2.png"
               alt="Admin dashboard view 2"
               className="w-24 h-24 object-contain cursor-pointer"
-              onClick={() => handleImageClick("/src/assets/admin_2.png")}
+              onClick={() => handleImageClick(`${admin2Image}`)}
             />
           </div>
         </div>

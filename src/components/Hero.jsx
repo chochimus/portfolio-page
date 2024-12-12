@@ -1,3 +1,5 @@
+import portfolioImage from "../assets/Portfolioheadshot.png";
+
 const Hero = () => {
   return (
     <section className="my-32 flex items-center justify-center p-6">
@@ -5,7 +7,7 @@ const Hero = () => {
         <div
           className="w-40 h-40 rounded-full bg-cover bg-center sm:bg-right-top shadow-md"
           style={{
-            backgroundImage: "url('/src/assets/Portfolioheadshot.png')",
+            backgroundImage: `url(${portfolioImage})`,
           }}
         ></div>
         <div className="flex flex-col">
