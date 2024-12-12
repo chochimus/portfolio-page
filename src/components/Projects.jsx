@@ -78,7 +78,7 @@ const Projects = () => {
         <div className="mt-5 flex space-x-4 justify-center">
           <div className="rounded-lg overflow-hidden border-gray-300 border shadow-md transition-all duration-200 ease-in-out transform hover:scale-105">
             <img
-              src="src/assets/image2_blog.png"
+              src={image2Image}
               alt="Blog content view"
               className="w-24 h-24 object-contain cursor-pointer"
               onClick={() => handleImageClick(`${image2Image}`)}
@@ -86,7 +86,7 @@ const Projects = () => {
           </div>
           <div className="rounded-lg overflow-hidden border-gray-300 border shadow-md transition-all duration-200 ease-in-out transform hover:scale-105">
             <img
-              src="src/assets/admin_1.png"
+              src={admin1Image}
               alt="Admin dashboard view 1"
               className="w-24 h-24 object-contain cursor-pointer"
               onClick={() => handleImageClick(`${admin1Image}`)}
@@ -94,7 +94,7 @@ const Projects = () => {
           </div>
           <div className="rounded-lg overflow-hidden border-gray-300 border shadow-md transition-all duration-200 ease-in-out transform hover:scale-105">
             <img
-              src="src/assets/admin_2.png"
+              src={admin2Image}
               alt="Admin dashboard view 2"
               className="w-24 h-24 object-contain cursor-pointer"
               onClick={() => handleImageClick(`${admin2Image}`)}
